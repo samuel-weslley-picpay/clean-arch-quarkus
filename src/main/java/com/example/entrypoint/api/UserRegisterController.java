@@ -1,4 +1,4 @@
-package com.example.entrypoint.quarkus;
+package com.example.entrypoint.api;
 
 import com.example.core.boundary.UserInputBoundary;
 import com.example.core.model.request.UserRequestModel;
@@ -13,7 +13,7 @@ import javax.ws.rs.Produces;
 @Path("/user")
 @Produces("application/json")
 @Consumes("application/json")
-public class CleanArch {
+public class UserRegisterController {
 
     @Inject UserInputBoundary userInput;
 
