@@ -3,16 +3,16 @@ package com.example.dataprovider.database.gateway;
 import com.example.core.gateway.UserRegisterDsGateway;
 import com.example.core.model.request.UserDsRequestModel;
 import com.example.dataprovider.database.entity.UserDataMapper;
-import com.example.dataprovider.database.repository.JpaUserRepository;
+import com.example.dataprovider.database.repository.PanacheUserRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class JpaUser implements UserRegisterDsGateway {
 
-    final JpaUserRepository repository;
+    final PanacheUserRepository repository;
 
-    public JpaUser(final JpaUserRepository repository) {
+    public JpaUser(final PanacheUserRepository repository) {
         this.repository = repository;
     }
 

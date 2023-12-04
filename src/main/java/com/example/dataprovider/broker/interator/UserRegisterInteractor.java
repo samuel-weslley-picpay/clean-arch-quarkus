@@ -16,9 +16,12 @@ import java.time.LocalDateTime;
 @ApplicationScoped
 public class UserRegisterInteractor implements UserInputBoundary {
 
-    @Inject UserRegisterDsGateway userDsGateway;
-    @Inject UserPresenter userPresenter;
-    @Inject UserFactory userFactory;
+    @Inject
+    UserRegisterDsGateway userDsGateway;
+    @Inject
+    UserPresenter userPresenter;
+    @Inject
+    UserFactory userFactory;
 
     @Override
     public UserResponseModel create(final UserRequestModel requestModel) {

@@ -15,7 +15,8 @@ import javax.ws.rs.Produces;
 @Consumes("application/json")
 public class UserRegisterController {
 
-    @Inject UserInputBoundary userInput;
+    @Inject
+    UserInputBoundary userInput;
 
     @POST
     public UserResponseModel create(UserRequestModel requestModel) {
